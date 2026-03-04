@@ -25,7 +25,13 @@ This project uses Groq to run the AI model. You will need a API key from them.
 GROQ_API_KEY=YOUR_GROQ_API_KEY
 ```
 
-### 3. Run the program
+### 3. Install the requirements
+Open your terminal or command prompt, make sure you are in the project folder, and run this command to download all the necessary tools:
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the program
 Once everything is set up, just run the Python script:
 
 ```sh
