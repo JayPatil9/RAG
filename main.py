@@ -114,6 +114,9 @@ def main():
             context_chunks = retrieve_context(query, model, index, chunks)
             answer = generate_answer(query, context_chunks)
             print(f"\nAnswer: {answer}")
+            print("\nRetrieved Context:")
+            for i, chunk in enumerate(context_chunks):
+                print(f"\nChunk {i+1}:\n{chunk}")
                 
     else:
         print(f"File {file_path} does not exist.")
