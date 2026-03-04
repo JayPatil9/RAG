@@ -99,15 +99,14 @@ def main():
     file_path = "context.pdf"
     if os.path.exists(file_path):
         pdf_text = load_pdf(file_path)
-        # print(pdf_text)
-        # with open("context.txt", "w", encoding="utf-8") as text_file:
-        #     text_file.write(pdf_text)
         chunks = split(pdf_text)
         embeddings, model = create_embeddings(chunks)
         index = create_vector_store(embeddings)
 
+        os.system('cls' if os.name == 'nt' else 'clear')
+
         while True:
-            query = input("\nEnter your question: ")
+            query = input("Enter your question: ")
             if query.lower() in ["exit", "quit"]:
                 print("Exiting the application.")
                 break
