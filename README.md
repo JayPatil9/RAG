@@ -1,4 +1,4 @@
-# Simple PDF Chatbot
+# Simple RAG
 
 This is a simple Python project I made that lets you ask questions about your PDF files. 
 
